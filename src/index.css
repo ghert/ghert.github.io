@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "departure";
+    src:
+        url("font/departure.woff2") format("woff2"),
+        url("font/departure.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    font-family: "departure", system-ui, Avenir, Helvetica, Arial, sans-serif;
+}

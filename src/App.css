@@ -1,0 +1,60 @@
+body {
+    max-width: 640px;
+    margin: 0 auto;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    min-height: 100vh;
+    padding: 16px;
+}
+
+a {
+    color: red;
+}
+
+hr {
+    display: block;
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: #ddd;
+}
+h1 {
+    font-size: 24px;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+ul {
+    padding: 0;
+    list-style-position: inside;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    width: 33%;
+}
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: -1;
+}
