@@ -13,8 +13,19 @@ body {
     padding: 16px;
 }
 
+::selection {
+    color: #fff;
+    background-color: blue;
+}
+
 a {
-    color: red;
+    color: blue;
+    transition: all 0.15s ease-in-out;
+}
+
+a:hover {
+    color: #fff;
+    background: blue;
 }
 
 hr {
