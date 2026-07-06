@@ -3,7 +3,13 @@ import "./App.css";
 function App() {
   return (
     <>
-      <p> Hello! 👋</p>
+      <img
+        src="/photo.png"
+        className="photo"
+        alt="Filip Przydryga"
+        width="100"
+        height="100"
+      />
       <p>
         I'm Filip - Poznań based software developer specializing in react &amp;
         react native &amp; node.js. Writing code since 2014. I make webapps,
@@ -22,13 +28,13 @@ function App() {
 
       <hr />
 
-      <h3>Stuff I use</h3>
-      <ul>
+      <h3>Tech I use</h3>
+      <ul className="technologies">
         <li>Typescript</li>
         <li>React</li>
         <li>React Native</li>
         <li>Next.js</li>
-        <li>Express</li>
+        <li>Node.js</li>
         <li>Supabase</li>
         <li>Jest</li>
         <li>GIT</li>
@@ -57,6 +63,15 @@ function App() {
         ></iframe>
       </p>
       <hr />
+      <h3>Projects</h3>
+      <div className="projects">
+        <div className="project-item">
+          <a href="http://sketches.filipprzydryga.xyz">
+            <img src="/sketches.gif" alt="Sketches project" width="640px" />
+          </a>
+          <p>Just a collection of sketches and experiments using p5 library</p>
+        </div>
+      </div>
     </>
   );
 }

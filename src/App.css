@@ -50,6 +50,20 @@ ul {
     overflow: hidden;
 }
 
+.photo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50px;
+    margin-right: 32px;
+    margin-top: 64px;
+    border: 1px solid #ddd;
+    transition: all 0.5s;
+}
+
+.photo:hover {
+    transform: rotate(360deg);
+}
+
 li {
     float: left;
     width: 33%;
@@ -68,4 +82,30 @@ canvas {
     width: 100vw !important;
     height: 100vh !important;
     z-index: -1;
+}
+
+.technologies {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.projects img {
+    max-width: 100%;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.projects a img:hover {
+    opacity: 0.3;
+}
+
+.projects p {
+    font-size: 12px;
+    line-height: 18px;
 }
