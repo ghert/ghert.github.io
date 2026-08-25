@@ -69,9 +69,16 @@ function App() {
           <a href="http://sketches.filipprzydryga.xyz">
             <img src="/sketches.gif" alt="Sketches project" width="640px" />
           </a>
-          <p>Just a collection of sketches and experiments using p5 library</p>
+          <p>Collection of experiments in p5 library</p>
+        </div>
+        <div className="project-item">
+          <a href="https://poznan-events.vercel.app">
+            <img src="/poznan-events.png" alt="Poznan events" width="640px" />
+          </a>
+          <p>Events in Poznań</p>
         </div>
       </div>
+
     </>
   );
 }
