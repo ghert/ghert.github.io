@@ -11,18 +11,18 @@ function App() {
             <div className="columns">
               <div>
                 <h1>Hey, I'm Filip</h1>
-              <p>
-                I make web apps, mobile apps and websites. <br />
-                Writing code since 2014 - mostly react, react native and next.js.<br />
-                Currently living in Poznań, Poland.
-                </p>
                 <p>
+                  I make web apps, mobile apps and websites. <br />
+                  Writing code since 2014 - mostly react, react native and next.js.<br />
+                  Currently living in Poznań, Poland.
+                </p>
+                <div className="links">
                   <a href="mailto:przydryga.filip@gmail.com">Email</a>
                   <a href="https://www.linkedin.com/in/filip-przydryga/">Linkedin</a>
                   <a href="https://github.com/ghert">Github</a>
                   <a href="https://www.instagram.com/g.h.r.t/">Instagram</a>
                   <a href="https://soundcloud.com/ghert">Soundcloud</a>
-                </p>
+                </div>
               </div>
               <div className="me">
                 <img width="128" src="/profile.jpg" />
@@ -66,26 +66,31 @@ function App() {
         <h4>Languages</h4>
         <ul className="technologies">
           <li>Typescript</li>
-          <li>Javascript</li>
-          <li>HTML</li>
-          <li>CSS</li>
+            <li>Javascript</li>
+            <li>HTML</li>
+            <li>CSS</li>
         </ul>
-        <h4>Frameworks</h4>
+        <h4>Web</h4>
         <ul className="technologies">
-          <li>React</li>
+            <li>React</li>
+            <li>Next.js</li>
+            <li>PostgreSQL</li>
+            <li>Node.js</li>
+            <li>Redux</li>
+            <li>Zustand</li>
+            <li>Tanstack Query</li>
+          </ul>
+        <h4>Mobile</h4>
+        <ul className="technologies">
           <li>React Native</li>
-          <li>Next.js</li>
+          <li>Expo</li>
+          <li>Sentry</li>
         </ul>
         <h4>Tools</h4>
         <ul className="technologies">
-          <li>Expo</li>
-          <li>Tanstack Query</li>
-          <li>Redux</li>
-          <li>Node.js</li>
           <li>GIT</li>
           <li>Claude code</li>
-          <li>PostgreSQL</li>
-          <li>p5.js</li>
+          <li>Figma</li>
         </ul>
       </ScaleSection>
 
@@ -102,7 +107,7 @@ function App() {
                 </p>
               </div>
               <p>
-                <iframe width="100%" height="200" scrolling="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2336077325&color=%2397e4ff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                <iframe width="100%" height="166" scrolling="no" frameBorder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1889269635&color=%233c97d1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
               </p>
             </div>
         </div>
