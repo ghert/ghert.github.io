@@ -1,24 +1,28 @@
 import "./App.css";
-import LenisProvider from './components/LenisProvider';
-import { ScaleSection } from './components/ScaleSection';
+import LenisProvider from "./components/LenisProvider";
 
 function App() {
   return (
     <LenisProvider>
-    <main>
-      <ScaleSection className="section intro">
-        <div className="container">
+      <main>
+        <section className="section intro">
+          <div className="container">
             <div className="columns">
               <div>
                 <h1>Hey, I'm Filip</h1>
                 <p>
-                  I make web apps, mobile apps and websites. <br />
-                  Writing code since 2014 - mostly react, react native and next.js.<br />
-                  Currently living in Poznań, Poland.
+                  I love bulding web and mobile apps.
+                  <br />
+                  Writing code since 2014 - mostly react, react native, next.js
+                  ad node.js.
+                  <br />
+                  Currently located in Poznań, Poland.
                 </p>
                 <div className="links">
                   <a href="mailto:przydryga.filip@gmail.com">Email</a>
-                  <a href="https://www.linkedin.com/in/filip-przydryga/">Linkedin</a>
+                  <a href="https://www.linkedin.com/in/filip-przydryga/">
+                    Linkedin
+                  </a>
                   <a href="https://github.com/ghert">Github</a>
                   <a href="https://www.instagram.com/g.h.r.t/">Instagram</a>
                   <a href="https://soundcloud.com/ghert">Soundcloud</a>
@@ -28,50 +32,61 @@ function App() {
                 <img width="128" src="/profile.jpg" />
               </div>
             </div>
-        </div>
-      </ScaleSection>
-      <ScaleSection className="section projects dark">
-        <div className="container">
-          <div className="projects-list">
-              <div className="project-item">
-                <div>
-                  <h3><a href="https://poznan.events">poznan.events</a></h3>
-                  <p>Catalog of music events and concerts happening in Poznań. I created this site to help people find events easily and support local music scene.</p>
-                  <p>Next.js / PostgreSQL / Tailwind / Daisy UI</p>
-              </div>
-              <a href="https://poznan.events">
-                <img src="/poznanevents.png" alt="Poznan events" width="640px" />
-              </a>
-            </div>
           </div>
-        </div>
-        </ScaleSection>
-        <ScaleSection className="projects section">
+        </section>
+        <section className="section projects dark">
           <div className="container">
+            <h1>Projects</h1>
             <div className="projects-list">
               <div className="project-item">
+                <div>
+                  <h3>
+                    <a href="https://poznan.events">poznan.events</a>
+                  </h3>
+                  <p>
+                    Catalog of music events and concerts happening in Poznań. I
+                    created this site to help people find events easily and
+                    support local music scene.
+                  </p>
+                  <p>Next.js / PostgreSQL / Tailwind / Daisy UI</p>
+                </div>
+                <a href="https://poznan.events">
+                  <img
+                    src="/poznanevents.png"
+                    alt="Poznan events"
+                    width="640px"
+                  />
+                </a>
+              </div>
+              <div className="project-item">
+                <div>
+                  <h3>
+                    <a href="http://sketches.filipprzydryga.xyz">p5.sketches</a>
+                  </h3>
+                  <p>
+                    Collection of various experiments using p5.js library.
+                    <br />
+                    Typography, 2d, 3d, noise etc.
+                  </p>
+                </div>
                 <a href="http://sketches.filipprzydryga.xyz">
                   <img src="/sketches.png" alt="Sketches project" />
                 </a>
-                <div><h3><a href="sketches.filipprzydryga.xyz">p5.sketches</a></h3>
-                  <p>Collection of various experiments using p5.js library.<br/>
-                    Typography, 2d, 3d, noise etc.</p>
-                </div>
               </div>
             </div>
           </div>
-        </ScaleSection>
-      <ScaleSection className="tech section dark">
-        <h3>Tech stack</h3>
-        <h4>Languages</h4>
-        <ul className="technologies">
-          <li>Typescript</li>
+        </section>
+        <section className="tech section">
+          <h3>Tech stack</h3>
+          <h4>Languages</h4>
+          <ul className="technologies">
+            <li>Typescript</li>
             <li>Javascript</li>
             <li>HTML</li>
             <li>CSS</li>
-        </ul>
-        <h4>Web</h4>
-        <ul className="technologies">
+          </ul>
+          <h4>Web</h4>
+          <ul className="technologies">
             <li>React</li>
             <li>Next.js</li>
             <li>PostgreSQL</li>
@@ -80,38 +95,49 @@ function App() {
             <li>Zustand</li>
             <li>Tanstack Query</li>
           </ul>
-        <h4>Mobile</h4>
-        <ul className="technologies">
-          <li>React Native</li>
-          <li>Expo</li>
-          <li>Sentry</li>
-        </ul>
-        <h4>Tools</h4>
-        <ul className="technologies">
-          <li>GIT</li>
-          <li>Claude code</li>
-          <li>Figma</li>
-        </ul>
-      </ScaleSection>
+          <h4>Mobile</h4>
+          <ul className="technologies">
+            <li>React Native</li>
+            <li>Expo</li>
+            <li>Sentry</li>
+            <li>React Navigation</li>
+          </ul>
+          <h4>Tools</h4>
+          <ul className="technologies">
+            <li>GIT</li>
+            <li>Claude code</li>
+            <li>Figma</li>
+          </ul>
+        </section>
 
-      <ScaleSection className="section">
-        <div className="container">
+        <section className="section dark">
+          <div className="container">
             <div className="columns">
               <div>
                 <h3>Music</h3>
-              <p>
-                Besides being a developer I love making music. Ableton is my DAW of choice, but I use some hardware from time to time: digitone, digitakt and yamaha reface cs.
-              </p>
-              <p>
-                Checkout my <a href="http://soundcloud.com/ghert">soundcloud</a> for more.
+                <p>
+                  Besides being a developer I love making music. Ableton is my
+                  DAW of choice, but I use some hardware from time to time:
+                  digitone, digitakt and yamaha reface cs.
+                </p>
+                <p>
+                  Checkout my{" "}
+                  <a href="http://soundcloud.com/ghert">soundcloud</a> for more.
                 </p>
               </div>
               <p>
-                <iframe width="100%" height="166" scrolling="no" frameBorder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1889269635&color=%233c97d1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                <iframe
+                  width="100%"
+                  height="166"
+                  scrolling="no"
+                  frameBorder="no"
+                  allow="autoplay; encrypted-media"
+                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1889269635&color=%233c97d1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+                ></iframe>
               </p>
             </div>
-        </div>
-      </ScaleSection>
+          </div>
+        </section>
       </main>
     </LenisProvider>
   );
