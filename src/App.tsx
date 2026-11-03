@@ -122,7 +122,8 @@ function App() {
                 </p>
                 <p>
                   Checkout my{" "}
-                  <a href="http://soundcloud.com/ghert">soundcloud</a> for more.
+                  <a href="http://soundcloud.com/ghert">soundcloud</a> for more
+                  tracks.
                 </p>
               </div>
               <p>
