@@ -11,10 +11,10 @@ function App() {
               <div>
                 <h1>Hey, I'm Filip</h1>
                 <p>
-                  I love bulding web and mobile apps.
+                  I love bulding websites, web and mobile apps.
                   <br />
                   Writing code since 2014 - mostly react, react native, next.js
-                  ad node.js.
+                  and node.js.
                   <br />
                   Currently located in Poznań, Poland.
                 </p>
