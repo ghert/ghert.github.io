@@ -11,7 +11,7 @@ function App() {
               <div>
                 <h1>Hey, I'm Filip</h1>
                 <p>
-                  I love bulding websites, web and mobile apps.
+                  I love bulding web and mobile products.
                   <br />
                   Writing code since 2014 - mostly react, react native, next.js
                   and node.js.
@@ -34,11 +34,18 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="section projects dark">
+        <section className="section projects">
           <div className="container">
-            <h1>Projects</h1>
+            <h2>Projects</h2>
             <div className="projects-list">
               <div className="project-item">
+                <a href="https://poznan.events">
+                  <img
+                    src="/poznanevents.png"
+                    alt="Poznan events"
+                    width="640px"
+                  />
+                </a>
                 <div>
                   <h3>
                     <a href="https://poznan.events">poznan.events</a>
@@ -50,15 +57,11 @@ function App() {
                   </p>
                   <p>Next.js / PostgreSQL / Tailwind / Daisy UI</p>
                 </div>
-                <a href="https://poznan.events">
-                  <img
-                    src="/poznanevents.png"
-                    alt="Poznan events"
-                    width="640px"
-                  />
-                </a>
               </div>
               <div className="project-item">
+                <a href="http://sketches.filipprzydryga.xyz">
+                  <img src="/sketches.png" alt="Sketches project" />
+                </a>
                 <div>
                   <h3>
                     <a href="http://sketches.filipprzydryga.xyz">p5.sketches</a>
@@ -69,31 +72,30 @@ function App() {
                     Typography, 2d, 3d, noise etc.
                   </p>
                 </div>
-                <a href="http://sketches.filipprzydryga.xyz">
-                  <img src="/sketches.png" alt="Sketches project" />
-                </a>
               </div>
             </div>
           </div>
         </section>
         <section className="tech section">
-          <h3>Tech stack</h3>
-          <h4>Languages</h4>
+          <h2>Tech stack</h2>
+          <h4>Frontend</h4>
           <ul className="technologies">
-            <li>Typescript</li>
-            <li>Javascript</li>
             <li>HTML</li>
             <li>CSS</li>
-          </ul>
-          <h4>Web</h4>
-          <ul className="technologies">
+            <li>Typescript</li>
+            <li>Javascript</li>
             <li>React</li>
             <li>Next.js</li>
-            <li>PostgreSQL</li>
-            <li>Node.js</li>
             <li>Redux</li>
             <li>Zustand</li>
-            <li>Tanstack Query</li>
+            <li>React Query</li>
+          </ul>
+          <h4>Backend</h4>
+          <ul className="technologies">
+            <li>PostgreSQL</li>
+            <li>Drizzle ORM</li>
+            <li>Node.js</li>
+            <li>Express</li>
           </ul>
           <h4>Mobile</h4>
           <ul className="technologies">
@@ -106,15 +108,16 @@ function App() {
           <ul className="technologies">
             <li>GIT</li>
             <li>Claude code</li>
+            <li>MCP</li>
             <li>Figma</li>
           </ul>
         </section>
 
-        <section className="section dark">
+        <section className="section music">
           <div className="container">
+            <h2>Music</h2>
             <div className="columns">
               <div>
-                <h3>Music</h3>
                 <p>
                   Besides being a developer I love making music. Ableton is my
                   DAW of choice, but I use some hardware from time to time:
