@@ -71,7 +71,7 @@ function App() {
         </section>
         <section className="section projects">
           <div className="container">
-            <h2>Projects</h2>
+            <h2>Personal Projects</h2>
             <div className="projects-list">
               <ProjectCard
                 href="https://poznan.events"
@@ -105,7 +105,7 @@ function App() {
         </section>
         <Experience />
         <section className="tech section">
-          <h2>Tech stack</h2>
+          <h2>Tech Stack</h2>
           <TechList
             items={[
               { name: "TypeScript", icon: siTypescript },
