@@ -1,5 +1,43 @@
 import "./App.css";
+import Experience from "./components/Experience";
 import LenisProvider from "./components/LenisProvider";
+import ProjectCard from "./components/ProjectCard";
+import TechList from "./components/TechList";
+import {
+  siClaude,
+  siCss,
+  siDocker,
+  siDrizzle,
+  siExpo,
+  siExpress,
+  siFigma,
+  siGit,
+  siGraphql,
+  siHtml5,
+  siJavascript,
+  siModelcontextprotocol,
+  siNextdotjs,
+  siNodedotjs,
+  siPostgresql,
+  siReact,
+  siReactquery,
+  siRedux,
+  siSentry,
+  siTailwindcss,
+  siTypescript,
+} from "simple-icons";
+
+// Simple Icons has no Zustand logo — a simple bear head in the same 24x24 style
+const bearIcon = {
+  path:
+    "M3.5 13.5a8.5 8.5 0 1 0 17 0a8.5 8.5 0 1 0-17 0Z" +
+    "M2 6a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0-7 0Z" +
+    "M15 6a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0-7 0Z" +
+    "M7.7 12a1.3 1.3 0 1 1 2.6 0a1.3 1.3 0 1 1-2.6 0Z" +
+    "M13.7 12a1.3 1.3 0 1 1 2.6 0a1.3 1.3 0 1 1-2.6 0Z" +
+    "M9.2 16.5a2.8 2.8 0 1 1 5.6 0a2.8 2.8 0 1 1-5.6 0Z" +
+    "M10.9 15.8a1.1 1.1 0 1 0 2.2 0a1.1 1.1 0 1 0-2.2 0Z",
+};
 
 function App() {
   return (
@@ -11,12 +49,10 @@ function App() {
               <div>
                 <h1>Hey, I'm Filip</h1>
                 <p>
-                  I love bulding web and mobile products.
-                  <br />
-                  Writing code since 2014 - mostly react, react native, next.js
-                  and node.js.
-                  <br />
-                  Currently located in Poznań, Poland.
+                  I love bulding web and mobile products. I spent last 10 years
+                  delivering SaaS products, mobile apps, dashboards, e-commerce
+                  storefronts, CMS websites and backends. I'm open to{" "}
+                  <a href="mailto:przydryga.filip@gmail.com">work</a>
                 </p>
                 <div className="links">
                   <a href="mailto:przydryga.filip@gmail.com">Email</a>
@@ -25,7 +61,6 @@ function App() {
                   </a>
                   <a href="https://github.com/ghert">Github</a>
                   <a href="https://www.instagram.com/g.h.r.t/">Instagram</a>
-                  <a href="https://soundcloud.com/ghert">Soundcloud</a>
                 </div>
               </div>
               <div className="me">
@@ -38,79 +73,67 @@ function App() {
           <div className="container">
             <h2>Projects</h2>
             <div className="projects-list">
-              <div className="project-item">
-                <a href="https://poznan.events">
-                  <img
-                    src="/poznanevents.png"
-                    alt="Poznan events"
-                    width="640px"
-                  />
-                </a>
-                <div>
-                  <h3>
-                    <a href="https://poznan.events">poznan.events</a>
-                  </h3>
-                  <p>
-                    Catalog of music events and concerts happening in Poznań. I
-                    created this site to help people find events easily and
-                    support local music scene.
-                  </p>
-                  <p>Next.js / PostgreSQL / Tailwind / Daisy UI</p>
-                </div>
-              </div>
-              <div className="project-item">
-                <a href="http://sketches.filipprzydryga.xyz">
-                  <img src="/sketches.png" alt="Sketches project" />
-                </a>
-                <div>
-                  <h3>
-                    <a href="http://sketches.filipprzydryga.xyz">p5.sketches</a>
-                  </h3>
-                  <p>
-                    Collection of various experiments using p5.js library.
-                    <br />
-                    Typography, 2d, 3d, noise etc.
-                  </p>
-                </div>
-              </div>
+              <ProjectCard
+                href="https://poznan.events"
+                title="poznan.events"
+                image="/poznanevents.png"
+                imageAlt="Poznan events"
+                video="/poznanevents.mp4"
+              >
+                <p>
+                  Catalog of music events and concerts happening in Poznań. I
+                  created this site to help people find events easily and
+                  support local music scene.
+                </p>
+                <p>Next.js / PostgreSQL / Tailwind / Daisy UI</p>
+              </ProjectCard>
+              <ProjectCard
+                href="http://sketches.filipprzydryga.xyz"
+                title="p5.sketches"
+                image="/sketches.png"
+                imageAlt="Sketches project"
+                video="/sketches.mp4"
+              >
+                <p>
+                  Collection of various experiments using p5.js library.
+                  <br />
+                  Typography, 2d, 3d, noise etc.
+                </p>
+              </ProjectCard>
             </div>
           </div>
         </section>
+        <Experience />
         <section className="tech section">
           <h2>Tech stack</h2>
-          <h4>Frontend</h4>
-          <ul className="technologies">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Typescript</li>
-            <li>Javascript</li>
-            <li>React</li>
-            <li>Next.js</li>
-            <li>Redux</li>
-            <li>Zustand</li>
-            <li>React Query</li>
-          </ul>
-          <h4>Backend</h4>
-          <ul className="technologies">
-            <li>PostgreSQL</li>
-            <li>Drizzle ORM</li>
-            <li>Node.js</li>
-            <li>Express</li>
-          </ul>
-          <h4>Mobile</h4>
-          <ul className="technologies">
-            <li>React Native</li>
-            <li>Expo</li>
-            <li>Sentry</li>
-            <li>React Navigation</li>
-          </ul>
-          <h4>Tools</h4>
-          <ul className="technologies">
-            <li>GIT</li>
-            <li>Claude code</li>
-            <li>MCP</li>
-            <li>Figma</li>
-          </ul>
+          <TechList
+            items={[
+              { name: "TypeScript", icon: siTypescript },
+              { name: "React", icon: siReact },
+              { name: "React Native", icon: siReact },
+              { name: "Next.js", icon: siNextdotjs },
+              { name: "Node.js", icon: siNodedotjs },
+              { name: "PostgreSQL", icon: siPostgresql },
+              { name: "Expo", icon: siExpo },
+              { name: "JavaScript", icon: siJavascript },
+              { name: "Tailwind", icon: siTailwindcss },
+              { name: "React Query", icon: siReactquery },
+              { name: "Redux", icon: siRedux },
+              { name: "Zustand", icon: bearIcon },
+              { name: "Drizzle ORM", icon: siDrizzle },
+              { name: "Express", icon: siExpress },
+              { name: "GraphQL", icon: siGraphql },
+              { name: "Docker", icon: siDocker },
+              { name: "Sentry", icon: siSentry },
+              { name: "React Navigation", icon: siReact },
+              { name: "HTML", icon: siHtml5 },
+              { name: "CSS", icon: siCss },
+              { name: "Git", icon: siGit },
+              { name: "Figma", icon: siFigma },
+              { name: "Claude Code", icon: siClaude },
+              { name: "MCP", icon: siModelcontextprotocol },
+            ]}
+          />
         </section>
 
         <section className="section music">
